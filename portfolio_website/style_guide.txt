@@ -1,0 +1,7 @@
+font-sizes:
+largest: 4rem;
+large: 2.62rem;
+base: 1.37rem;
+
+font-weight:
+bold: 800;
