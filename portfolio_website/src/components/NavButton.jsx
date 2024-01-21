@@ -1,8 +1,6 @@
 function NavButton({txt}) {
     return (
-        <button>
-            {txt}
-        </button>
+        <button>{txt}</button>
     )
 }
 
