@@ -1,5 +1,7 @@
+import './App.css'
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import Container from "./components/Container"
 
 function App() {
 
@@ -7,6 +9,7 @@ function App() {
     <div className=" text-white ">
       <Navbar/>
       <Hero/>
+      <Container/>
     </div>
   )
 }
