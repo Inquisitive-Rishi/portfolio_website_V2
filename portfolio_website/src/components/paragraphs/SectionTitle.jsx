@@ -1,6 +1,10 @@
-function SectionTitle({text}) {
+function SectionTitle({text, customStyles}) {
+    const style = {
+        marginTop:50,
+        fontSize:'3rem'
+    }
     return (
-        <p className="mt-5 text-[3rem]">{text}</p>
+        <p className={customStyles} style={style}>{text}</p>
     )
 }
 

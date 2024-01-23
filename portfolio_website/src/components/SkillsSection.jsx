@@ -6,16 +6,14 @@ const skillDescription = "I started playing with computers when I was 11 years-o
 
 function SkillsSection() {
     return (
-        <div className="flex">
-            <div className="left w-[100%]">
-            <SectionTitle text="My Skills"/>
-            <div className="h-32 bg-zinc-500"></div>
-            </div>
-            <div className="right">
+        <div className="grid grid-cols-base grid-row-base gap-5">
+            <SectionTitle text="My Skills" customStyles="col-span-3"/>
+            <div className=" bg-zinc-500 row-start-2 justify-center align-center"></div>
+            <div className="row-start-2 col-start-2">
             <Skills/>
-            <p className="font-bold">I love building stuff 📱</p>
-            <ParagraphNormal text={skillDescription}/>
-            <a href="">keep reading my bio</a>
+            <p className="font-bold my-1">I love building stuff 📱</p>
+            <ParagraphNormal text={skillDescription} style="text-1.5xl"/>
+            <a href="www.google.com" className="font-bold text-red-500 hover:underline">keep reading my bio</a>
             </div>
         </div>  
     )
