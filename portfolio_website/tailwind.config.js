@@ -11,11 +11,11 @@ export default {
       },
       gridTemplateRows: {
         // Simple 16 row grid
-        'base': 'repeat(2, minmax(500px, auto))',
+        'base': '150px 500px',
       },
       gridTemplateColumns: {
         // Simple 16 column grid
-        'base': 'repeat(2, minmax(350px, auto))',
+        'base': '0.4fr 0.6fr',
       }
     },
   },
