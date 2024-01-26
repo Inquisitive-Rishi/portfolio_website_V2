@@ -10,4 +10,5 @@ const featuredSection = [
 const skills = ['JavaScript','React','NextJS','TypeScript','NodeJS','HTML','CSS','MongoDB','GraphQL','MySQL','PostgreSQL','Firebase','Python']
 
 
+
 export {btns, heroTxt, featuredSection, skills};
