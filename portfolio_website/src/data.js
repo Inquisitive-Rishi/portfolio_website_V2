@@ -7,4 +7,7 @@ const featuredSection = [
     {title: "React interview cheatsheet", text:"A cheatsheet for React interviews that goes over hooks, the DOM, props and more unique Reactyness"}
 ]
 
-export {btns, heroTxt, featuredSection};
+const skills = ['JavaScript','React','NextJS','TypeScript','NodeJS','HTML','CSS','MongoDB','GraphQL','MySQL','PostgreSQL','Firebase','Python']
+
+
+export {btns, heroTxt, featuredSection, skills};

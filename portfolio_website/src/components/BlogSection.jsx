@@ -9,9 +9,9 @@ console.log(featuredData);
 
 function BlogSection() {
   return (
-   <div className="p-10"> 
+   <div> 
     <SectionTitle text="Featured"/>
-    <div className="flex justify-around  max-[900px]:flex-col">
+    <div className="flex justify-around  max-[900px]:flex-col max-[900px]:items-center max-[900px]:text-center">
     {featuredData.map(data => {
         return (
             <div key={data.title} className="w-[250px]">
