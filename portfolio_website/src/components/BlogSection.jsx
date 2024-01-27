@@ -5,7 +5,6 @@ import ParagraphNormal from "./paragraphs/ParagraphNormal";
 import Link from './Link'
 
 const featuredData = data.featuredSection;
-console.log(featuredData);
 
 function BlogSection() {
   return (
