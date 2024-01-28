@@ -17,7 +17,7 @@ function BlogSection() {
             <Subtitle key={data.title} text={data.title}/>
             <div className="w-[250px] h-[250px] bg-slate-400 my-2"></div>
             <ParagraphNormal key={data.text} text={data.text}/>
-            <Link text="Read the full story"/>
+            <Link/>
             </div>
         )
     })}

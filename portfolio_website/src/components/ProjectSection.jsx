@@ -1,5 +1,6 @@
 import SectionTitle from '../components/paragraphs/SectionTitle'
 import * as data from '../data'
+import Button from './Button';
 import Skilltab from './Skilltab';
 import ParagraphNormal from './paragraphs/ParagraphNormal';
 import ProjectTitle from "./paragraphs/ProjectTitle";
@@ -15,12 +16,13 @@ export default function ProjectSection() {
         return (
           <div key={project.id} className='flex justify-between' >
           <div className="min-h-[300px] w-[400px] bg-slate-400"></div>
-          <div className='max-w-[50%]'>
+          <div className='max-w-[50%] flex flex-col justify-between items-end'>
                <ProjectTitle key={project.title} title={project.title}/>
                <div className="flex flex-row-reverse flex-wrap ml-auto my-5 max-w-[70%] gap-1 max-[790px]:justify-center max-[790px]:mx-auto">
                {project.stacks.map(skill => <Skilltab key={skill} text={skill}/>)}
                </div>
                <ParagraphNormal key={project.paragraph} style="text-pretty text-right" text={project.paragraph}/>
+               <Button/>
           </div> 
           </div>
           )})}
