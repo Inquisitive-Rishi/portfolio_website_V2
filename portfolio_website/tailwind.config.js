@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-bg': "url('./src/assets/social/Meteor.svg')"
+        'hero-bg': "url('./src/assets/social/Meteor.svg')",
       },
       gridTemplateRows: {
         // Simple 16 row grid

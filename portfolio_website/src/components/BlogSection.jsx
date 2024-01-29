@@ -10,12 +10,12 @@ function BlogSection() {
   return (
    <div> 
     <SectionTitle text="Featured"/>
-    <div className="flex justify-around  max-[900px]:flex-col max-[900px]:items-center max-[900px]:text-center">
+    <div className="flex justify-around max-[900px]:flex-col max-[900px]:items-center max-[900px]:text-center">
     {featuredData.map(data => {
         return (
-            <div key={data.title} className="w-[250px]">
+            <div key={data.title} className="max-w-[250px]">
             <Subtitle key={data.title} text={data.title}/>
-            <div className="w-[250px] h-[250px] bg-slate-400 my-2"></div>
+            <div className="w-[100%] h-[250px] bg-slate-400 my-2"></div>
             <ParagraphNormal key={data.text} text={data.text}/>
             <Link/>
             </div>
