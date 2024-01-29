@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'hero-bg': "url('./src/assets/social/Meteor.svg')",
+        'email-bg': "url('./src/assets/social/email.svg')"
       },
       gridTemplateRows: {
         // Simple 16 row grid
