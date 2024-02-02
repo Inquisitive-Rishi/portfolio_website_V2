@@ -12,7 +12,10 @@ function MailSection() {
     }
   return (
     <div className="flex justify-between mt-20">
-        <ProjectTitle title="🤓 We'd love to hear from you"/>
+        <div className="block">
+        <ProjectTitle title="🤓 Let's get in touch"/>
+        <p className="font-bold text-3xl mt-10 text-red-500">rishiraj007bgp@gmail.com</p>
+        </div>
         <form action="#" className="flex flex-col gap-5 max-w-[100%] items-center">
             <input type="text" name="fullname" placeholder="name" style={styles}/>
             <input type="text" name="email" placeholder="email" style={styles}/>
