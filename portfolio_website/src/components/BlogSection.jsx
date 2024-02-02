@@ -2,7 +2,7 @@ import SectionTitle from "./paragraphs/SectionTitle";
 import * as data from "../data"
 import Subtitle from "./paragraphs/Subtitle";
 import ParagraphNormal from "./paragraphs/ParagraphNormal";
-import Link from './LinkElement'
+import LinkElement from './LinkElement'
 
 const featuredData = data.featuredSection;
 
@@ -17,7 +17,7 @@ function BlogSection() {
             <Subtitle key={data.title} text={data.title}/>
             <div className="w-[100%] h-[250px] bg-slate-400 my-2"></div>
             <ParagraphNormal key={data.text} text={data.text}/>
-            <Link/>
+            <LinkElement text="Read the full story"/>
             </div>
         )
     })}

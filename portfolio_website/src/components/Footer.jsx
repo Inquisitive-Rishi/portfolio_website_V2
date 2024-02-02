@@ -1,10 +1,10 @@
 import Subtitle from "./paragraphs/Subtitle";
-import NavButton from "./NavButton";
 import * as data from '../data'
+import LinkElement from "./LinkElement";
 
 export default function Footer() {
   return (
-    <div className="bg-zinc-700">
+    <div className="bg-zinc-700 p-10">
         <div className="max-w-[1200px] mx-auto flex justify-between items-center">
 
         <div>
@@ -14,11 +14,15 @@ export default function Footer() {
 
         <div>
         <p>Links</p>
-        <div className="max-w-[300px]">
-        {data.btns.map(btn => <NavButton txt={btn} key={btn}/>)}
+        <div className="max-w-[200px] flex flex-wrap gap-2">
+        {data.links.map(link => <LinkElement key={link} text={link}/>)}
+        </div>
         </div>
 
+        <div>
+        <Subtitle text="Let's get in touch"/>
         </div>
+
         </div>
     </div>
   )
