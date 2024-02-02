@@ -4,4 +4,4 @@ function Link({text="Read the full story"}) {
   )
 }
 
-export default Link
+export default Link;

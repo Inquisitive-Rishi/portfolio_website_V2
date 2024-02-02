@@ -1,8 +1,8 @@
 import SectionTitle from "./paragraphs/SectionTitle";
 import * as data from "../data"
-import Subtitle from "./Subtitle";
+import Subtitle from "./paragraphs/Subtitle";
 import ParagraphNormal from "./paragraphs/ParagraphNormal";
-import Link from './Link'
+import Link from './LinkElement'
 
 const featuredData = data.featuredSection;
 

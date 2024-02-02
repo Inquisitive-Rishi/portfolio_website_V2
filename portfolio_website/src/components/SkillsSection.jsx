@@ -1,6 +1,6 @@
-import Link from "./Link";
+import Link from "./LinkElement";
 import * as data from '../data'
-import Subtitle from "./Subtitle";
+import Subtitle from "./paragraphs/Subtitle";
 import ParagraphNormal from "./paragraphs/ParagraphNormal";
 import SectionTitle from "./paragraphs/SectionTitle";
 import Skilltab from "./Skilltab";
