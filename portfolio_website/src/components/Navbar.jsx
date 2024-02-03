@@ -1,18 +1,31 @@
 import NavButton from "./NavButton";
 import * as data from '../data.js'
 import hamImg from "../assets/hamburger.png"
+import closeNavImg from "../assets/close.png"
+import { useState } from "react";
 
 function Navbar() {
+  const [open, setOpen] = useState(false)
 
-    return (
-        <div className="flex gap-8 justify-center p-2 items-center px-20 font-bold">
-            <p className="mr-auto text-3xl">Rishi Raj</p>
-            <div><img src={hamImg} className="md-[790px]:hidden" /></div>
-            <div className="max-[790px]:hidden">
-            {data.links.map(link => <NavButton txt={link} key={link}/>)}
-            </div>
-        </div>
-    )
+  function toggleNavbar() {
+    setOpen(prevState => !prevState)
+  }
+
+  return (
+    <div className="flex gap-8 justify-center p-2 items-center px-20 font-bold">
+      <p className="mr-auto text-3xl">Rishi Raj</p>
+      {!open && <img src={hamImg} className="md-[790px]:hidden" onClick={toggleNavbar}/>}
+      <div className="max-[790px]:hidden">
+        {data.links.map(link => <NavButton txt={link} key={link}/>)}
+      </div>
+      {open && 
+      <div className=" backdrop-blur-lg h-screen w-[400px] flex flex-col gap-3 absolute right-0 top-0 px-10 py-10">
+        <img src={closeNavImg} onClick={toggleNavbar} className="h-10 w-10 ml-auto"/>
+        {data.links.map(link => <NavButton txt={link} key={link}/>)}
+      </div>
+      }
+    </div>
+  )
 }
 
 export default Navbar;

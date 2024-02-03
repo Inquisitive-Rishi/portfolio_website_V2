@@ -7,7 +7,7 @@ import Footer from "./components/Footer"
 function App() {
 
   return (
-    <div className=" text-white ">
+    <div className=" text-white relative">
       {/* <Navbar/> */}
       <Hero/>
       <Container/>
