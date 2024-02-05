@@ -7,10 +7,10 @@ import MailSection from "./MailSection"
 export default function Container() {
   return (
     <div className="max-w-[1200px] m-auto p-5 text-black">
-    <SkillsSection/>
-    <BlogSection/>
-    <ProjectSection/>
-    <MailSection/>
+      <SkillsSection/>
+      <BlogSection/>
+      <ProjectSection/>
+      <MailSection/>
     </div>
   )
 }
