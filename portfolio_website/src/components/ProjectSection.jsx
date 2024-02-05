@@ -1,4 +1,5 @@
 import SectionTitle from '../components/paragraphs/SectionTitle'
+import '../App.css'
 import * as data from '../data'
 import Button from './Button';
 import Skilltab from './Skilltab';
