@@ -1,15 +1,14 @@
 import './App.css'
 import Footer from "./components/Footer"
 import Navbar from "../src/components/Navbar"
-import Homepage from './components/Homepage'
-
+import { Outlet } from "react-router-dom"
 
 function App() {
 
   return (
-    <div className=" text-white relative">
+    <div className=" text-white relative flex flex-col">
       <Navbar/>
-      <Homepage/>
+      <Outlet/>
       <Footer/>
     </div>
   )

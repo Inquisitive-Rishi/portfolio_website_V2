@@ -1,4 +1,3 @@
-// everything below hero seciton goes in here
 import BlogSection from "./BlogSection"
 import ProjectSection from "./ProjectSection"
 import SkillsSection from "./SkillsSection"

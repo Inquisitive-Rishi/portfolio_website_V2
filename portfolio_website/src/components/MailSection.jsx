@@ -3,25 +3,25 @@ import emailImg  from "../assets/social/email.svg"
 import ProjectTitle from "./paragraphs/ProjectTitle"
 
 function MailSection() {
-    const styles = {
-        outline: "none",
-        border: "2px solid black",
-        width: "100%",
-        padding: "0.4rem",
-        color: "black"
-    }
+  const styles = {
+    outline: "none",
+    border: "2px solid black",
+    width: "100%",
+    padding: "0.4rem",
+    color: "black"
+  }
   return (
     <div className="flex justify-between mt-20 max-[950px]:flex-col max-[950px]:items-center">
-        <div className="block">
+      <div className="block">
         <ProjectTitle title="🤓 Let's get in touch"/>
         <p className="font-bold text-3xl mt-10 text-red-500 max-[950px]:mb-2 text-center">rishiraj007bgp@gmail.com</p>
-        </div>
-        <form action="#" className="flex flex-col gap-5 max-w-[100%] items-center">
-            <input type="text" name="fullname" placeholder="name" style={styles}/>
-            <input type="text" name="email" placeholder="email" style={styles}/>
-            <textarea name="text" id="" cols="30" rows="10" style={styles} placeholder="Hello Rishi...."></textarea>
-            <button className="p-2 bg-red-500 text-white w-[100%] hover:font-bold">Submit</button>
-        </form>
+      </div>
+      <form action="#" className="flex flex-col gap-5 max-w-[100%] items-center">
+        <input type="text" name="fullname" placeholder="name" style={styles}/>
+        <input type="text" name="email" placeholder="email" style={styles}/>
+        <textarea name="text" id="" cols="30" rows="10" style={styles} placeholder="Hello Rishi...."></textarea>
+        <button className="p-2 bg-red-500 text-white w-[100%] hover:font-bold">Submit</button>
+      </form>
     </div>
   )
 }

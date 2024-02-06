@@ -1,6 +1,6 @@
 import Subtitle from "./paragraphs/Subtitle";
 import * as data from '../data'
-import LinkElement from "./LinkElement";
+import NavButton from "./NavButton";
 
 export default function Footer() {
   return (
@@ -15,7 +15,7 @@ export default function Footer() {
         <div>
           <p>Links</p>
           <div className="max-w-[200px] flex flex-wrap gap-2">
-            {data.links.map(link => <LinkElement key={link} text={link}/>)}
+            {data.links.map(link => <NavButton txt={link.text} linkTo={link.link} key={link.text}/>)}
           </div>
         </div>
 
