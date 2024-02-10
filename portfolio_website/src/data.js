@@ -2,7 +2,6 @@ const links = [
   { link: "/", text: "Home" },
   { link: "blogs", text: "Blogs" },
   { link: "projects", text: "Projects" },
-  { link: "#", text: "Contact" },
 ]
 
 const heroTxt = "I love exploring and creating 🚀 I'm a lifelong learner 🎓 and I might have a thing for traditional Neapolitan Pizza 🍕"

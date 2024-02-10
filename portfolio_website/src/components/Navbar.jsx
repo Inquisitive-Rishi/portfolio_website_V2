@@ -3,6 +3,8 @@ import * as data from '../data.js'
 import hamImg from "../assets/hamburger.png"
 import closeNavImg from "../assets/close.png"
 import { useState } from "react";
+import gitImg from '../assets/git.png'
+import { Link } from 'react-router-dom'
 
 
 function Navbar() {
@@ -25,6 +27,11 @@ function Navbar() {
         {data.links.map(link => <NavButton txt={link.text} linkTo={link.link} key={link.text}/>)}
       </div>
       }
+      <button>
+        <Link to="github" >
+          <img src={gitImg} alt="git image" />
+        </Link>
+      </button>
     </div>
   )
 }

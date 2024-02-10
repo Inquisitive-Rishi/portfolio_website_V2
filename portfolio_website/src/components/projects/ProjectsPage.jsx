@@ -2,7 +2,7 @@
 export default function ProjectsPage() {
   return (
     <div className="text-black">
-      <h1>This is a project page</h1>
+      <p className="font-bold text-3xl">This is a project page</p>
     </div>
   )
 }

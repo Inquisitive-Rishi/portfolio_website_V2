@@ -3,6 +3,7 @@ import BlogPage from './blogs/BlogPage'
 import ProjectsPage from "./projects/ProjectsPage"
 import App from "../App"
 import Homepage from "./Homepage"
+import Github from "./Github"
 
 export default function Router() {
   const router = createBrowserRouter([
@@ -12,7 +13,8 @@ export default function Router() {
       children: [
         { index: true, element: <Homepage/> },
         { path: "blogs", element: <BlogPage/> },
-        { path: "projects", element: <ProjectsPage/> }
+        { path: "projects", element: <ProjectsPage/> },
+        { path: "github", element: <Github/> }
       ]
     },
   ])
