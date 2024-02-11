@@ -3,8 +3,8 @@ import * as data from '../data.js'
 import hamImg from "../assets/hamburger.png"
 import closeNavImg from "../assets/close.png"
 import { useState } from "react";
-import gitImg from '../assets/git.png'
-import { Link } from 'react-router-dom'
+import gitWhiteImg from '../assets/git-white.png'
+import { NavLink } from 'react-router-dom'
 
 
 function Navbar() {
@@ -28,9 +28,9 @@ function Navbar() {
       </div>
       }
       <button>
-        <Link to="github" >
-          <img src={gitImg} alt="git image" />
-        </Link>
+        <NavLink to="github" >
+          <img src={gitWhiteImg} alt="git image" />
+        </NavLink>
       </button>
     </div>
   )
