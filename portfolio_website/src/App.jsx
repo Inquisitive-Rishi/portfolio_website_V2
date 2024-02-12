@@ -8,7 +8,7 @@ function App() {
   return (
     <div className=" text-white relative flex flex-col min-h-screen">
       <Navbar/>
-      <div className='flex-1'>
+      <div className='flex-1 flex flex-col'>
         <Outlet/>
       </div>
       <Footer/>

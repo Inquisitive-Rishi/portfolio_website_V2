@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import ParagraphNormal from "./paragraphs/ParagraphNormal"
 import locationImg from '../assets/map.png'
+import ApiText from "./paragraphs/ApiText"
+import LinkElement from './LinkElement'
 
 const myUrl = 'https://api.github.com/users/Inquisitive-Rishi'
 
@@ -28,11 +30,16 @@ function Github() {
     getData()
   }, [])
 
-  if (error) return <h1 className="text-black">An error has occured</h1>
-  if (loading) return <h1 className="text-black">Loading...</h1>
+  if (error) {
+    return (
+      <ApiText text={error}/>
+    )
+  }
 
   return (
-    <div className='flex justify-center items-center text-3xl p-3'>
+    (loading && (
+      <ApiText text="Loading..."/>
+    )) || <div className='flex items-center text-3xl p-3 justify-self-center h-screen self-center'>
       <div className=" p-3 shadow-lg shadow-indigo-500/40 text-black margin-auto">
         <div>
           <div className="flex gap-3">
@@ -51,7 +58,7 @@ function Github() {
                 <ParagraphNormal text={"following - "+myData.following}/>
               </div>
               <ParagraphNormal text={"Twitter - "+myData.twitter_username}/>
-              <ParagraphNormal text={"Reach me at - "+myData.url}/>
+              <a href={myData.url} className="text-xl hover:underline text-indigo-700">Go to my X profile</a>
               <ParagraphNormal text={"Repositories - "+myData.public_repos}/>
             </div>
           </div>
