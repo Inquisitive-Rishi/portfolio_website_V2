@@ -6,9 +6,11 @@ import { Outlet } from "react-router-dom"
 function App() {
 
   return (
-    <div className=" text-white relative flex flex-col">
+    <div className=" text-white relative flex flex-col min-h-screen">
       <Navbar/>
-      <Outlet/>
+      <div className='flex-1'>
+        <Outlet/>
+      </div>
       <Footer/>
     </div>
   )
